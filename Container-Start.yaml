@@ -15,7 +15,7 @@
 
   - name: Running the container
     docker_container:
-      image: chiru236/rnswebapp:latest
+      image: chiru236/rnswebapp
       name: webapp
       # path: docker
       state: started
