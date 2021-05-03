@@ -35,6 +35,9 @@
   
 - name: Deploying the Application
   copy: src=SampleWebApp.war dest=/usr/share/tomcat/webapps/ mode=0755
+  
+- name: Deploying the Application
+  copy: src=sample.war dest=/usr/share/tomcat/webapps/ mode=0755
 
 - name: Start Tomcat
   service: name=tomcat state=started enabled=yes
